@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Admin Team";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Admin Team</h1>
+
+    <div class="card-deck">
+        <hr />
+        @for (int i = 0; i < 2; i++)
+        {
+            <div class="card" style="width: 500px; height: 250px; display: inline-block;">
+                <div class="row align-items-center">
+                    <div class="col-sm-5 text-center">
+                        <img class="card-img" style="height: 150px; width: 150px; display: inline-block;" src="https://www.freeiconspng.com/thumbs/document-icon/document-icon-19.png" alt="cdImage">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Client Deliverable @(i+1)</h5>
+                            <p class="card-text">Date Submitted: </p>
+                            <p class="card-text">Status: </p>
+
+                            <form asp-controller="AdminTeam" asp-action="ApproveCD" method="post">
+
+                                <button type="submit" asp-controller="AdminTeam" asp-action="ApproveCD"
+                                        class="btn btn-secondary btn-sm">
+                                    Approve
+                                </button>
+
+                            </form>
+
+                            <br />
+
+                            <form asp-controller="AdminTeam" asp-action="DenyCD" method="post">
+
+                                <button type="submit" asp-controller="AdminTeam" asp-action="DenyCD"
+                                        class="btn btn-secondary btn-sm">
+                                    Deny
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
