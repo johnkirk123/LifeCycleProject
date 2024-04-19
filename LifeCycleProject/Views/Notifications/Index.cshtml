@@ -1,81 +1,36 @@
-﻿
-@{
+﻿@{
 
-    ViewData["Title"] = "Notications Admin";
+    ViewData["Title"] = "Notications";
 }
 
-<div class="justify-content-lg-start">
 
-    <div>
-        <button id="btnCreatAccount">Inbox</button>
+<h1>My Notifications</h1>
 
-        <button id="btnCreatAccount">Unread</button>
+
+<div style="display: flex; padding:5%; width:auto">
+
+    <div style=" background-color:darkred; flex:.10; padding:1%">
+        <!-- Inbox link -->
+        <h2><a href="#" id="linkInbox" style="color:white">Inbox</a></h2>
+        <!-- Unread link -->
+        <h2><a href="#" id="linkUnread" style="color:white">Unread</a></h2>
     </div>
 
+    <div class="d-print-grid" style="background-color: darkred; flex:.90; padding:1%; width: auto">
 
-</div>
+        <!-- Notifications-->
+        <div style=" color:white">
+            <h4>4/11/24 - Pending Approval - <a href="#" >Data Model - Project Team</a></h4>
+        </div>
 
-<div class="d-print-grid">
-    <!-- Notification 1 -->
-    <div class="notification">
-        <h3>4/11/24</h3>
-        <h3>Pending Approval</h3>
-        <p>Data Model - Project Team</p>
-
-    </div>
-
-    <!-- Notification 2 -->
-    <div class="notification">
-        <h3>4/01/24</h3>
-        <h3>Pending Approval</h3>
-        <p>User Stories - Project Team</p>
+        <div style="color: goldenrod">
+            <h4>4/01/24 - Pending Approval - <a href="#">User Stories - Project Team</a></h4>
+            <h4>3/27/24 - Pending Approval - <a href="#">Use Case Diagram (re-submission) - Project Team</a></h4>
+            <h4>3/15/24 - Pending approval - <a href ="#">Use Case Diagram - Project Team</a></h4>
+            <h4>3/01/24 - Pending Approval - <a href="#">Statement of Work - Project Team</a></h4>
+            <h4>2/24/24 - Pending Approval - <a href="#">Product Vision Statement - Project Team</a></h4>
+            <h4>2/12/24 - Pending Approval -  <a href="#">Interview Questions - Project Team</a></h4>
+        </div>
 
     </div>
-
-    <!-- Notification 3 -->
-    <div class="notification">
-        <h3>3/27/24</h3>
-        <h3>Pending Approval</h3>
-        <p>Use Case Diagram (re-submission) - Project Team</p>
-
-    </div>
-
-    <!-- Notification 4 -->
-    <div class="notification">
-        <h3>3/15/24</h3>
-        <h3>Pending Approval</h3>
-        <p>Use Case Diagram - Project Team</p>
-
-    </div>
-
-    <!-- Notification 5 -->
-    <div class="notification">
-        <h3>3/01/24</h3>
-        <h3>Pending Approval</h3>
-        <p> Statement of Work - Project Team</p>
-
-    </div>
-
-
-    <!-- Notification 6 -->
-    <div class="notification">
-        <h3>2/24/24</h3>
-        <h3>Pending Approval</h3>
-        <p> Product Vision Statement - Project Team</p>
-
-    </div>
-
-
-    <!-- Notification 6 -->
-    <div class="notification">
-        <h3>2/24/24</h3>
-        <h3>Pending Approval</h3>
-        <p> Interview Quest. - Project Team</p>
-
-    </div>
-
-
-
-
-
 </div>

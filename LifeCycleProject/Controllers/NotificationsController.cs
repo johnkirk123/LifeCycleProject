@@ -2,7 +2,7 @@
 
 namespace LifeCycleProject.Controllers
 {
-    public class NotifcationsController : Controller
+    public class NotificationsController : Controller
     {
         public IActionResult Index()
         {
