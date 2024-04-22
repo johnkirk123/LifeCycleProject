@@ -1,0 +1,162 @@
+﻿
+/*------------------------------------
+- COLOR temple-red
+------------------------------------*/
+
+$temple_red_t1: #9d2235;
+$temple_red_t2: #731826;
+$temple_red_t3: #e27a8a;
+$temple_red_t4: #e68f9d;
+$temple_red_t5: #380c13;
+$temple_red_t6: #661622;
+$temple_red_t7: #7f1b2b;
+$temple_red_t8: #0e0304;
+$temple_red_t9: #eaa0ab;
+
+$temple_red_shadow: rgba(157, 34, 53, 0.5);
+$temple_red_text_color_dark_bright: #fff;
+
+
+.alert-temple-red {
+    color: $temple_red_t5;
+    background-color: $temple_red_t9;
+    border-color: $temple_red_t4;
+}
+
+.alert-temple-red hr {
+    border-top-color: $temple_red_t3;
+}
+
+.alert-temple-red .alert-link {
+    color: $temple_red_t8;
+}
+
+.badge-temple-red {
+    color: $temple_red_text_color_dark_bright;
+    background-color: $temple_red_t1;
+}
+
+    .badge-temple-red[href]:hover, .badge-temple-red[href]:focus {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t2;
+    }
+
+.bg-temple-red {
+    background-color: #9d2235 !important;
+}
+
+a.bg-temple-red:hover, a.bg-temple-red:focus,
+button.bg-temple-red:hover,
+button.bg-temple-red:focus {
+    background-color: $temple_red_t2 !important;
+}
+
+.border-temple-red {
+    border-color: $temple_red_t1 !important;
+}
+
+.btn-temple-red {
+    color: $temple_red_text_color_dark_bright;
+    background-color: $temple_red_t1;
+    border-color: $temple_red_t1;
+}
+
+    .btn-temple-red:hover {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t7;
+        border-color: $temple_red_t2;
+    }
+
+    .btn-temple-red:focus, .btn-temple-red.focus {
+        box-shadow: 0 0 0 0.2rem $temple_red_shadow;
+    }
+
+    .btn-temple-red.disabled, .btn-temple-red:disabled {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t1;
+        border-color: $temple_red_t1;
+    }
+
+    .btn-temple-red:not(:disabled):not(.disabled):active, .btn-temple-red:not(:disabled):not(.disabled).active, .show > .btn-temple-red.dropdown-toggle {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t2;
+        border-color: $temple_red_t6;
+    }
+
+        .btn-temple-red:not(:disabled):not(.disabled):active:focus, .btn-temple-red:not(:disabled):not(.disabled).active:focus, .show > .btn-temple-red.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem $temple_red_shadow;
+        }
+
+.btn-outline-temple-red {
+    color: $temple_red_t1;
+    background-color: transparent;
+    border-color: $temple_red_t1;
+}
+
+    .btn-outline-temple-red:hover {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t1;
+        border-color: $temple_red_t1;
+    }
+
+    .btn-outline-temple-red:focus, .btn-outline-temple-red.focus {
+        box-shadow: 0 0 0 0.2rem $temple_red_shadow;
+    }
+
+    .btn-outline-temple-red.disabled, .btn-outline-temple-red:disabled {
+        color: $temple_red_t1;
+        background-color: transparent;
+    }
+
+    .btn-outline-temple-red:not(:disabled):not(.disabled):active, .btn-outline-temple-red:not(:disabled):not(.disabled).active, .show > .btn-outline-temple-red.dropdown-toggle {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t1;
+        border-color: $temple_red_t1;
+    }
+
+        .btn-outline-temple-red:not(:disabled):not(.disabled):active:focus, .btn-outline-temple-red:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-temple-red.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem $temple_red_shadow;
+        }
+
+.list-group-item-temple-red {
+    color: $temple_red_t5;
+    background-color: $temple_red_t4;
+}
+
+    .list-group-item-temple-red.list-group-item-action:hover, .list-group-item-temple-red.list-group-item-action:focus {
+        color: $temple_red_t5;
+        background-color: $temple_red_t3;
+    }
+
+    .list-group-item-temple-red.list-group-item-action.active {
+        color: $temple_red_text_color_dark_bright;
+        background-color: $temple_red_t5;
+        border-color: $temple_red_t5;
+    }
+
+.table-temple-red,
+.table-temple-red > th,
+.table-temple-red > td {
+    background-color: $temple_red_t4;
+}
+
+.table-hover .table-temple-red:hover {
+    background-color: $temple_red_t3;
+}
+
+    .table-hover .table-temple-red:hover > td,
+    .table-hover .table-temple-red:hover > th {
+        background-color: $temple_red_t3;
+    }
+
+.text-temple-red {
+    color: $temple_red_t1 !important;
+}
+
+a.text-temple-red:hover, a.text-temple-red:focus {
+    color: $temple_red_t2 !important;
+}
+
+.document-prev {
+    font-size: 225px;
+}
