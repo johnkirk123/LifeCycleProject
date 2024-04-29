@@ -7,22 +7,21 @@
 
     <div class="card-deck">
         <hr />
-        @for (int i = 0; i < 2; i++)
-        {
-            <div class="card" style="width: 500px; height: 250px; display: inline-block;">
+       
+            <div class="card" style="width: 1000px; height: 500px; display: inline-block;">
                 <div class="row align-items-center">
                     <div class="col-sm-5 text-center">
-                        <img class="card-img" style="height: 150px; width: 150px; display: inline-block;" src="https://www.freeiconspng.com/thumbs/document-icon/document-icon-19.png" alt="cdImage">
+                        <embed src="~/pdfs/DataModel.pdf" type="application/pdf" style="width: 145%; height: 500px;">
                     </div>
                     <div class="col-sm-7">
                         <div class="card-body">
-                            <h5 class="card-title">Client Deliverable @(i+1)</h5>
+                            <h5 class="card-title">Client Deliverable 1</h5>
                             <p class="card-text">Date Submitted: </p>
                             <p class="card-text">Status: </p>
 
-                            <form asp-controller="AdminTeam" asp-action="ApproveCD" method="post">
+                            <form asp-controller="AdminTeam" asp-action="Index" method="post">
 
-                                <button type="submit" asp-controller="AdminTeam" asp-action="ApproveCD"
+                            <button type="submit" asp-controller="AdminTeam" asp-action="Index"
                                         class="btn btn-secondary btn-sm">
                                     Approve
                                 </button>
@@ -31,9 +30,9 @@
 
                             <br />
 
-                            <form asp-controller="AdminTeam" asp-action="DenyCD" method="post">
+                        <form asp-controller="AdminTeam" asp-action="Index" method="post">
 
-                                <button type="submit" asp-controller="AdminTeam" asp-action="DenyCD"
+                            <button type="submit" asp-controller="AdminTeam" asp-action="Index"
                                         class="btn btn-secondary btn-sm">
                                     Deny
                                 </button>
@@ -44,6 +43,46 @@
                     </div>
                 </div>
             </div>
-        }
+            <br />
+            <br />
+
+        <div class="card" style="width: 1000px; height: 500px; display: inline-block;">
+            <div class="row align-items-center">
+                <div class="col-sm-5 text-center">
+                    <embed src="~/pdfs/UserStories.pdf" type="application/pdf" style="width: 145%; height: 500px;">
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body">
+                        <h5 class="card-title">Client Deliverable 2</h5>
+                        <p class="card-text">Date Submitted: </p>
+                        <p class="card-text">Status: </p>
+
+                        <form asp-controller="AdminTeam" asp-action="Index" method="post">
+
+                            <button type="submit" asp-controller="AdminTeam" asp-action="Index"
+                                    class="btn btn-secondary btn-sm">
+                                Approve
+                            </button>
+
+                        </form>
+
+                        <br />
+
+                        <form asp-controller="AdminTeam" asp-action="Index" method="post">
+
+                            <button type="submit" asp-controller="AdminTeam" asp-action="Index"
+                                    class="btn btn-secondary btn-sm">
+                                Deny
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
     </div>
 </div>

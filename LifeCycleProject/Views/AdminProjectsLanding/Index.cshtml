@@ -1,27 +1,28 @@
-﻿﻿@{
+﻿@{
     ViewData["Title"] = "All Projects";
 }
 <style>
-    .ProjectsTable{
+    .ProjectsTable {
         margin-left: auto;
         margin-right: 200px;
         margin-top: 80px;
     }
-    .ProjectsTable td{
-        padding-left: 80px;
-        padding-right: 90px;
-    }
 
-    .ProjectsTable th {
-        padding-top: 50px;
-        padding-left: 80px;
-        padding-right: 90px;
-    }
+        .ProjectsTable td {
+            padding-left: 80px;
+            padding-right: 90px;
+        }
+
+        .ProjectsTable th {
+            padding-top: 50px;
+            padding-left: 80px;
+            padding-right: 90px;
+        }
 
 </style>
 <div class="text-center">
     <h1 class="display-4" style="font-weight:bolder">All Projects</h1>
-    <a href="" style="position:absolute; top:30px; right:30px">
+    <a href="/notifications" style="position:absolute; top:30px; right:30px">
         <i class="bi bi-envelope" style="font-size: 60px;"></i>
     </a>
     <div style="padding-top:30px">
@@ -31,32 +32,33 @@
 </div>
 <table id="ProjectsTable" class="ProjectsTable">
     <tr id="ProjectNumbers1">
-         <th>Team 1 Project</th>
-         <th>Team 2 Project</th>
-         <th>Team 3 Project</th>
+        <th>Team 1 Project</th>
+        <th>Team 2 Project</th>
+        <th>Team 3 Project</th>
     </tr>
     <tr id="ProjectFiles1">
         <td>
-            <a href="" id="Project1" title="Team 1 Project">
+            <a href="/AdminTeam/Index" id="Project1" title="Team 1 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+
+            <a href="#" onclick="openPopup('popup1')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
         <td>
-            <a href="" id="Project2" title="Team 2 Project">
+            <a href="/AdminTeam/Index" id="Project2" title="Team 2 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+            <a href="#" onclick="openPopup('popup2')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
         <td>
-            <a href="" id="Project3" title="Team 3 Project">
+            <a href="/AdminTeam/Index" id="Project3" title="Team 3 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+            <a href="#" onclick="openPopup('popup3')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
@@ -68,30 +70,135 @@
     </tr>
     <tr id="ProjectFiles2">
         <td>
-            <a href="" id="Project4" title="Team 4 Project">
+            <a href="/AdminTeam/Index" id="Project4" title="Team 4 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+            <a href="#" onclick="openPopup('popup4')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
         <td>
-            <a href="" id="Project5" title="Team 5 Project">
+            <a href="/AdminTeam/Index" id="Project5" title="Team 5 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+            <a href="#" onclick="openPopup('popup5')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
         <td>
-            <a href="" id="Project6" title="Team 6 Project">
+            <a href="/AdminTeam/Index" id="Project6" title="Team 6 Project">
                 <i class="bi bi-files" style="font-size: 60px"></i>
             </a>
-            <a href="" id="PendingAdd">
+            <a href="#" onclick="openPopup('popup6')">
                 <i class="bi bi-plus-circle" style="font-size: 30px;"></i>
             </a>
         </td>
     </tr>
 </table>
 
+<!-- popups -->
+<dialog id="popup1">
+    <span onclick="closePopup('popup1')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
+<dialog id="popup2">
+    <span onclick="closePopup('popup2')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
+<dialog id="popup3">
+    <span onclick="closePopup('popup3')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
+<dialog id="popup4">
+    <span onclick="closePopup('popup4')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
+<dialog id="popup5">
+    <span onclick="closePopup('popup5')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
+<dialog id="popup6">
+    <span onclick="closePopup('popup6')" style="cursor: pointer;">&times;</span>
+    <h2>Add Student</h2>
+    <br />
+    <select id="studentDropDown" style="width:85%; ">
+        <option>Student 1</option>
+        <option>Student 2</option>
+        <option>Student 3</option>
+    </select>
+    <br />
+    <br />
+    <a href="/AdminProjectsLanding/Index" ">
+        <button style="width:100px; border-radius:15%; background-color:black; color: white; ">Add</button>
+    </a>
+</dialog>
 
+<!-- js -->
+<script>
+    // open popup
+    function openPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.showModal();
+    }
+
+    // close popup
+    function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.close();
+    }
+</script>
