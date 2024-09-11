@@ -22,6 +22,7 @@
             get { return roleID; } 
             set {  roleID = value; } 
         }
+        //
         public string UserPassword 
         { 
             get {  return userPassword; } 
